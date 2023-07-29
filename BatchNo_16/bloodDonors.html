@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal - www.codingnepalweb.com -->
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <!-- <title>Autocomplete Search Box | CodingNepal</title> -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+
+<body>
+    <header class="home">
+        <p id="heading">Blood Donor Information Access</p>
+
+        <!-- <footer>
+                <div id="footer">
+                    <ul>
+                        <li><i class="fab fa-facebook"></i></li>
+                    </ul>
+                    <ul>
+                        <li><i class="fab fa-instagram"></i></li>
+                    </ul>
+                    <ul>
+                        <li><i class="fab fa-linkedin"></i></li>
+                    </ul>
+                    <ul>
+                        <li><i class="fab fa-twitter"></i></li>
+                    </ul>
+                </div>
+            </footer> -->
+
+        <!-- <p >Save a life, donate blood <i class="fas fa-tint"></i></p> -->
+        <h1 style="text-align: center; font-size: 50px; color: #fff; margin-top: 260px;">Search for
+            the city</h1>
+        <div class="wrapper" id="search" style="margin-left: 530px;">
+            <div class="search-input">
+                <a href="" target="_blank" hidden></a>
+                <!-- <h1 class="place">Search for the city</h1> -->
+                <input type="text" placeholder="type to search..">
+                <div class="autocom-box">
+                    <!-- here list are inserted from javascript -->
+                </div>
+                <div class="icon" onclick="search()"><i class="fas fa-search"></i></div>
+            </div>
+        </div>
+        <!-- <img src="images/download.jpg" alt=""> -->
+        <!-- <div class="flexBoxes">
+            <a href="#" class="boxes">
+                <div class="item box1">
+                    <h1 class="blood">A<sup>+</sup></h1>
+                </div>
+            </a>
+            <a href="#" class="boxes">
+                <div class="item box2">
+                    <h1 class="blood">B<sup>+</sup></h1>
+                </div>
+            </a>
+            <a href="#" class="boxes">
+                <div class="item box3">
+                    <h1 class="blood">AB<sup>+</sup></h1>
+                </div>
+            </a>
+            <a href="#" class="boxes">
+                <div class="item box4">
+                    <h1 class="blood">O<sup>+</sup></h1>
+                </div>
+            </a>
+            <a href="#" class="boxes">
+                <div class="item box5">
+                    <h1 class="blood">A<sup>-</sup></h1>
+                </div>
+            </a>
+            <a href="#" class="boxes">
+                <div class="item box6">
+                    <h1 class="blood">B<sup>-</sup></h1>
+                </div>
+            </a>
+            <a href="#" class="boxes">
+                <div class="item box7">
+                    <h1 class="blood">AB<sup>-</sup></h1>
+                </div>
+            </a>
+            <a href="#" class="boxes">
+                <div class="item box8">
+                    <h1 class="blood">O<sup>-</sup></h1>
+                </div>
+            </a>
+        </div> -->
+    </header>
+
+    <script src="js/suggestions.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+        function search() {
+            var un = document.div["myForm"]["uName"].value;
+            var pw = document.forms["myForm"]["pass"].value;
+            alert("Redirecting to a new page");
+            if (un == "admin" && pw == "1234") {
+                window.location.href = "home.html";
+            }
+            else {
+                alert("Invalid details");
+            }
+        }
+    </script>
+
+</body>
+
+</html>

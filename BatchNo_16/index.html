@@ -1,0 +1,89 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Save a life, donate blood</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <link rel="stylesheet" href="images">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+        integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+</head>
+
+<body>
+    <header class="main">
+        <p id="heading">Blood Donor Information Management</p>
+        <nav class="navbar">
+            <div id="logo">
+                <ul>
+                    <li><i class="fas fa-plus-circle"></i></li>
+                </ul>
+            </div>
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i>&nbsp Home</a></li>
+                <li><a href="reg.html"><i class="far fa-user-circle"></i>&nbsp Donor Registration</a></li>
+                <li><a href="contact.html"><i class="fas fa-user-alt"></i>&nbsp Contact</a></li>
+            </ul>
+            <footer>
+                <div id="footerR">
+                    <ul>
+                        <li class="foot"><a href="https://facebook.com/"><i class="fab fa-facebook icons"></i></a></li>
+                    </ul>
+                    <ul>
+                        <li class="foot"><a href="https://instagram.com"><i class="fab fa-instagram icons"></i></a></li>
+                    </ul>
+                    <ul>
+                        <li class="foot"><a href="https://linkedin.com"><i class="fab fa-linkedin icons"></i></a></li>
+                    </ul>
+                    <ul>
+                        <li class="foot"><a href="https://twitter.com"><i class="fab fa-twitter"></i></a></li>
+                    </ul>
+                </div>
+            </footer>
+        </nav>
+
+        <p id="slogan">Save a life, donate blood <i class="fas fa-tint"></i></p>
+
+        <div id="form-container" style="max-width: 450px; margin-top: 150px;">
+            <div class="form-wrap">
+                <p class="formText">Admin login</p>
+                <form name="myForm" class="form" method="post">
+                    <div class="form-group">
+                        <label for="username">username</label><br>
+                        <input type="username" name="uName" id="uName" class="input" placeholder="Enter username"
+                            style="width: 100%;">
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label><br>
+                        <input type="password" name="pass" id="pass" class="input" placeholder="Enter password"
+                            style="width: 100%;">
+                    </div>
+                    <div class="form-group">
+                        <input type="button" name="log" id="logButton" class="button" value="login"
+                            onclick="myFunction()" style=" width: 60%;">
+
+                    </div>
+                    <div class="demo"></div>
+                </form>
+            </div>
+        </div>
+    </header>
+</body>
+
+<script>
+    function myFunction() {
+        var un = document.forms["myForm"]["uName"].value;
+        var pw = document.forms["myForm"]["pass"].value;
+        alert("Redirecting to a new page");
+        if (un == "admin" && pw == "1234") {
+            window.location.href = "home.html";
+        }
+        else {
+            alert("Invalid details");
+        }
+    }
+
+</script>
+
+</html>

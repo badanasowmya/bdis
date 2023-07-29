@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Save a life, donate blood</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+        integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+</head>
+
+<body>
+    <header class="mainReg" style="height: 100vh;">
+        <p id="heading" style="position: fixed; top: 0;">Blood Donor Information Management</p>
+        <nav class="navbar">
+            <div id="logoR">
+                <ul>
+                    <li><i class="fas fa-plus-circle"></i></li>
+                </ul>
+            </div>
+            <div class="regNav">
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-home"></i>&nbsp Home</a></li>
+                    <li><a href="reg.html"><i class="far fa-user-circle"></i>&nbsp Donor Registration</a></li>
+                    <li><a href="contact.html"><i class="fas fa-user-alt"></i>&nbsp Contact</a></li>
+                </ul>
+            </div>
+            <footer>
+                <div id="footerR">
+                    <ul>
+                        <li class="foot"><a href="#"><i class="fab fa-facebook icons"></i></a></li>
+                    </ul>
+                    <ul>
+                        <li class="foot"><a href="#"><i class="fab fa-instagram icons"></i></a></li>
+                    </ul>
+                    <ul>
+                        <li class="foot"><a href="#"><i class="fab fa-linkedin icons"></i></a></li>
+                    </ul>
+                    <ul>
+                        <li class="foot"><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    </ul>
+                </div>
+            </footer>
+        </nav>
+        <p id="slogan" style="padding-top:35px">Save a life, donate blood <i class="fas fa-tint"></i>
+        </p>
+
+        <div id="form-container">
+            <div class="form-wrap">
+                <p class="formText" style="margin-right: 20px;">Registration Form</p>
+                <br>
+                <form action="connect.php" method="POST">
+                    <div class="form-group" style="white-space: nowrap;">
+                        <label for="firstName" style="padding-right: 54px;">First Name</label>
+                        <input type="text" name="firstName" id="firstName" class="input" required>
+                    </div>
+                    <div class="form-group" style="white-space: nowrap;">
+                        <label for="lastName" style="padding-right: 55px;">Last Name</label>
+                        <input type="text" name="lastName" id="lastName" class="input" required>
+                    </div>
+                    <div class="form-group" style="white-space: nowrap;">
+                        <label for="date" style="padding-right: 39px;">Date of Birth</label>
+                        <input type="date" name="date" id="date" class="input" required>
+                    </div>
+                    <!-- <div class="form-group" style="white-space: nowrap;">
+                        <label for="date" style="padding-right: 3px;">Last Donate Date</label>
+                        <input type="date" name="dateDonation" id="date" class="input">
+                    </div> -->
+                    <div class="form-group" style="white-space: nowrap;">
+                        <label for="BG" style="padding-right: 37px;">Blood Group</label>
+                        <select name="BG" id="BG" class="input" style="width: 68.5%;" required>
+                            <option value="A+">A+</option>
+                            <option value="B+" selected>B+</option>
+                            <option value="AB+">AB+</option>
+                            <option value="O+">O+</option>
+                            <option value="A-">A-</option>
+                            <option value="B-">B-</option>
+                            <option value="AB-">AB-</option>
+                            <option value="O-">O-</option>
+                        </select>
+                    </div>
+                    <div class="form-group" style="white-space: nowrap;">
+                        <label for="email" style="padding-right: 96px;">Email</label>
+                        <input type="email" name="email" id="email" class="input" required>
+                    </div>
+                    <div class="form-group" style="white-space: nowrap;">
+                        <label for="PN" style="padding-right: 20px;">Phone Number</label>
+                        <input type="number" name="PN" id="PN" class="input" required>
+                    </div>
+                    <div class="form-group" style="white-space: nowrap; ">
+                        <label for="Add" style="padding-right: 108px;">City</label>
+                        <input type="message" name="Address" id="Add" class="input" required>
+
+                    </div>
+
+                    <div class="form-group" style=" margin-left: 47px;">
+                        <button type="submit" name="submit" class="button" onclick="myFunction1()">Submit</button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </header>
+</body>
+<script src="js/script.js"></script>
+
+</html>
